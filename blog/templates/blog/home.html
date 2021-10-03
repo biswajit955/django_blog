@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for post in posts %}
+    <article class="media content-section">
+    <div style="background-color: rgb(234, 236, 236);" class="media-body fa-border ">
+      <div class="article-metadata">
+        <a  class="mr-2 " href="{% url 'profile' %}">{{ post.author }}</a>
+        <small  class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+      </div>
+        <img style="height: 80px; width: 80px; float: left;" class=" img-circle account-img " src="{{ post.author.profile.image.url }}">
+      <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+      <p style="padding-left: 120px;" class="article-content ">{{ post.content }}</p>
+    </div>
+  </article>
+    {% endfor %}
+
+      {%if is_paginated %}
+
+         {%if page_obj.has_previous %}
+           <a style="margin-left: 20px; padding: 10px 20px;" class=" btn btn-primary" href="?page={{page_obj.previous_page_number}}"> 🢀 previous</a>
+         {% endif %}
+
+         {%if page_obj.has_next %}
+           <a style="margin-left: 880px; padding: 10px 28px;" class=" btn btn-primary" href="?page={{page_obj.next_page_number}}">next 🢂</a>
+         {% endif %} 
+
+       {% endif %} 
+{% endblock content %}

@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h2>You has been Logout, Login again</h2>
+    <small class="text-muted">
+     <a class="btn btn-primary" href="{%url 'login'%}">Login</a>
+    </small>
+{% endblock content %}

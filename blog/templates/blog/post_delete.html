@@ -4,10 +4,13 @@
         <form class="w-50 p-3" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
+                <legend class="border-bottom mb-4">Delete Post</legend>
             </fieldset>
             <div class="form-group">
+                <h3>Are you sure for delete post</h3>
+                <br>
                 <button class="btn btn-danger" type="submit">Delete</button>
+                <a style="margin-left: 20px;" class="btn btn-primary"  href="{%url 'post-detail' object.id%}">Back</a>
             </div>
         </form>
         </div>

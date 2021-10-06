@@ -22,8 +22,7 @@ def home(request):
 
 
     context = {
-        'posts': post_list , 
-        'page': pages
+        'posts': post_list 
     }
     return render(request, 'blog/home.html', context)
 
@@ -36,7 +35,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html' 
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    paginate_by = 2
+    paginate_by = 5
 
 class PostDetailview(DetailView):
     model = Post

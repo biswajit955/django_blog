@@ -4,11 +4,22 @@
 {% block content %}
 <div class="content-section">
   <div style="background-color: rgb(234, 236, 236);" class="media fa-border">
-    {% if user.profile.image.url %}
-    <img class="hight img-circle account-img" src="{{ user.profile.image.url }}">
-    {%else%}
-    <img class=" img-circle account-img" src="{% static 'blog/image/default.png' %}">
-    {%endif%}
+
+  {% if user.profile.gender == 'M'  %}
+  {% comment %} <h2 class="account-heading">hi..</h2> {% endcomment %}
+      {% if user.profile.image.url %}
+      <img class="hight img-circle account-img" src="{{ user.profile.image.url }}">
+      {% else %}
+      <img class=" img-circle account-img" src="{% static 'blog/image/default_male.png' %}">
+      {% endif %}
+  {% elif user.profile.gender == 'F'  %}
+  {% comment %} <h2 class="account-heading">hi</h2> {% endcomment %}
+      {% if user.profile.image.url %}
+      <img class="hight img-circle account-img" src="{{ user.profile.image.url }}">
+      {% else %}
+      <img class=" img-circle account-img" src="{% static 'blog/image/default_female.png' %}">
+      {% endif %}
+  {% endif %}
     <div class="media-body">
       <h2 class="account-heading">{{ user.username }}</h2>
     </div>
@@ -18,6 +29,8 @@
     <fieldset class="form-group">
       <legend class="border-bottom mb-4">Profile Info</legend>
       {{ u_form|crispy }}
+      <p>Your IP address : {{ip}}</p>
+      <p>Your Gender : {{user.profile.gender}}</p>
       {{ p_form|crispy }}
     </fieldset>
     <div class="form-group">

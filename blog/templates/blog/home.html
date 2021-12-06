@@ -1,10 +1,15 @@
 {% extends "blog/base.html" %}
 {% block content %}
+
     {% for post in posts %}
+    
     <article class="media content-section">
     <div style="background-color: rgb(234, 236, 236);" class="media-body fa-border ">
       <div class="article-metadata">
         <a  class="mr-2 " href="{% url 'profile' %}">{{ post.author }}</a>
+        
+        <p>Your ip address: {{ip}}</p>
+        
         <small  class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
       </div>
         <img style="height: 80px; width: 80px; float: left;" class=" img-circle account-img " src="{{ post.author.profile.image.url }}">

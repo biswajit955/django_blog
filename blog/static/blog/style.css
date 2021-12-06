@@ -1,98 +1,109 @@
-.navbar{
+.navbar {
     padding: 10px;
 }
-.space{
+
+.space {
     margin-left: 20px;
 }
-.home_space{
+
+.home_space {
     margin-left: 122px;
 }
-.footer-edit{
+
+.footer-edit {
     background-color: #222;
     padding: 30px 0px;
     margin-top: 80px;
 }
-.footer-copyright{
+
+.footer-copyright {
     color: white;
 }
 
-.nilu{
+.nilu {
     color: red;
-}h1, h2, h3, h4, h5, h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #444444;
-  }
-  
-  ul {
+}
+
+ul {
     margin: 0;
-  }
-  
-  .bg-steel {
+}
+
+.bg-steel {
     background-color: #5f788a;
-  }
-  
-  .site-header .navbar-nav .nav-link {
+}
+
+.site-header .navbar-nav .nav-link {
     color: #cbd5db;
-  }
-  
-  .site-header .navbar-nav .nav-link:hover {
+}
+
+.site-header .navbar-nav .nav-link:hover {
     color: #ffffff;
-  }
-  
-  .site-header .navbar-nav .nav-link.active {
+}
+
+.site-header .navbar-nav .nav-link.active {
     font-weight: 500;
-  }
-  
-  .content-section {
+}
+
+.content-section {
     background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
-  }
-  
-  .article-title {
+}
+
+.article-title {
     color: #444444;
-  }
-  
-  a.article-title:hover {
+}
+
+a.article-title:hover {
     color: #428bca;
     text-decoration: none;
-  }
-  
-  .article-content {
+}
+
+.article-content {
     white-space: pre-line;
-  }
-  
-  .article-img {
+}
+
+.article-img {
     height: 65px;
     width: 65px;
     margin-right: 16px;
-  }
-  
-  .article-metadata {
+}
+
+.article-metadata {
     padding-bottom: 1px;
     margin-bottom: 4px;
     border-bottom: 1px solid #e3e3e3
-  }
-  
-  .article-metadata a:hover {
+}
+
+.article-metadata a:hover {
     color: #333;
     text-decoration: none;
-  }
-  
-  .article-svg {
+}
+
+.article-svg {
     width: 25px;
     height: 25px;
     vertical-align: middle;
-  }
-  
-  .account-img {
+}
+
+.account-img {
     height: 125px;
     width: 125px;
     margin-right: 20px;
     margin-bottom: 16px;
-  }
-  
-  .account-heading {
+}
+
+.account-heading {
     font-size: 2.5rem;
-  }
+}

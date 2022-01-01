@@ -3,12 +3,12 @@ Django-blog is an open-source ecommerce platform built on the Django Web Framewo
 ## Features Included
 
 - Search Functionality
--add post
--delete post
--user authentication system
--user authorisation system
--user profile
--pagination 
+- add post
+- delete post
+- user authentication system
+- user authorisation system
+- user profile
+- pagination 
 - Much more...
 
 ## Installation

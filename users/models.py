@@ -11,7 +11,7 @@ class Profile(models.Model):
         (FEMALE, 'Female'),
     ]
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    gender = models.CharField(max_length=6, choices=Gender, default='M')
+    gender = models.CharField(max_length=6, choices=Gender, default='')
     image = models.ImageField(default='default_male.jpg', upload_to = 'profile_pics')
     
 

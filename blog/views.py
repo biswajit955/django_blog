@@ -117,7 +117,7 @@ class PostDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'blog/post_delete.html'
     success_url = '/'
 
-    def form_valid(self):
+    def form_valid(self,messages):
         messages.error(self.request, f"Your post is deleted ")
         return HttpResponseRedirect(self.success_url)
 

@@ -1,6 +1,9 @@
 <div id="top"></div>
-# django_blog
+
+
+# Django_blog
 ## Django-blog is an open-source ecommerce platform built on the Django Web Framework.
+
 
 # Demo
 ## Homepage
